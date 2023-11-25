@@ -1,0 +1,604 @@
+:root {
+  --main-p-color: #738182;
+  --main-h-color: #1c1c1c;
+  --bg-section-color: #f7f7f7;
+}
+
+.bg-section-color {
+  background-color: var(--bg-section-color);
+}
+
+.heading-color {
+  color: var(--main-h-color);
+}
+
+.p-color {
+  color: var(--main-p-color);
+}
+
+.light-gray {
+  color: #999;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.l-spacing {
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+/* start navbar */
+nav {
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05);
+}
+
+h1 a {
+  letter-spacing: 1px;
+  color: var(--main-h-color);
+}
+
+nav .nav-item {
+  width: fit-content;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: var(--main-h-color);
+  font-weight: 500;
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--main-h-color);
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  transition: 0.3s width;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active:after {
+  width: 100%;
+}
+
+/* Start Header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../imgs/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .heading-icons span {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+header .heading-icons span a {
+  color: #fff;
+  font-size: 14px;
+}
+
+header .heading-contact h2 {
+  font-weight: normal;
+}
+
+header .heading-contact h2::after {
+  content: " |";
+  margin-left: 8px;
+  font-weight: 500;
+  animation: typing 10s infinite;
+}
+
+@keyframes typing {
+  0% {
+    content: "L|";
+  }
+  1.5% {
+    content: "La|";
+  }
+  3% {
+    content: "Lar|";
+  }
+  4.5% {
+    content: "Larr|";
+  }
+  6% {
+    content: "Larry|";
+  }
+  7.5% {
+    content: "Larry |";
+  }
+  9% {
+    content: "Larry D|";
+  }
+  10.5% {
+    content: "Larry Da|";
+  }
+  12% {
+    content: "Larry Dan|";
+  }
+  13.5% {
+    content: "Larry Dani|";
+  }
+  15% {
+    content: "Larry Danie|";
+  }
+  16.5% {
+    content: "Larry Daniel|";
+  }
+  18% {
+    content: "Larry Daniels|";
+  }
+  19.5% {
+    content: "Larry Daniels|";
+  }
+  21% {
+    content: "Larry Daniel|";
+  }
+  22.5% {
+    content: "Larry Danie|";
+  }
+  24% {
+    content: "Larry Dani|";
+  }
+  25.5% {
+    content: "Larry Dan|";
+  }
+  27% {
+    content: "Larry Da|";
+  }
+  28.5% {
+    content: "Larry D|";
+  }
+  30% {
+    content: "Larry |";
+  }
+  31.5% {
+    content: "Larry|";
+  }
+  33% {
+    content: "Larr|";
+  }
+  34.5% {
+    content: "Lar|";
+  }
+  36% {
+    content: "La|";
+  }
+  37.5% {
+    content: "L|";
+  }
+  39% {
+    content: " |";
+  }
+  40.5% {
+    content: "D|";
+  }
+  42% {
+    content: "De|";
+  }
+  43.5% {
+    content: "Dev|";
+  }
+  45% {
+    content: "Deve|";
+  }
+  46.5% {
+    content: "Devel|";
+  }
+  48% {
+    content: "Develo|";
+  }
+  49.5% {
+    content: "Develop|";
+  }
+  51% {
+    content: "Develope|";
+  }
+  52.5% {
+    content: "Developer|";
+  }
+  54% {
+    content: "Developer|";
+  }
+  55.5% {
+    content: "Develope|";
+  }
+  57% {
+    content: "Develop|";
+  }
+  58.5% {
+    content: "Develo|";
+  }
+  60% {
+    content: "Devel|";
+  }
+  61.5% {
+    content: "Deve|";
+  }
+  63% {
+    content: "Dev|";
+  }
+  64.5% {
+    content: "De|";
+  }
+  66% {
+    content: "D|";
+  }
+  67.5% {
+    content: " |";
+  }
+  69% {
+    content: " |";
+  }
+  70.5% {
+    content: "D|";
+  }
+  72% {
+    content: "De|";
+  }
+  73.5% {
+    content: "Des|";
+  }
+  75% {
+    content: "Desi|";
+  }
+  76.5% {
+    content: "Desig|";
+  }
+  78% {
+    content: "Design|";
+  }
+  79.5% {
+    content: "Designe|";
+  }
+  81% {
+    content: "Designer|";
+  }
+  82.5% {
+    content: "Designer|";
+  }
+  84% {
+    content: "Designe|";
+  }
+  85.5% {
+    content: "Design|";
+  }
+  87% {
+    content: "Desig|";
+  }
+  88.5% {
+    content: "Desi|";
+  }
+  90% {
+    content: "Des|";
+  }
+  91.5% {
+    content: "De|";
+  }
+  93% {
+    content: "D|";
+  }
+  94.5% {
+    content: " |";
+  }
+  100% {
+    content: "|";
+  }
+}
+
+/* Start About */
+.about .img::after {
+  content: "";
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  width: 80%;
+  height: 80%;
+  z-index: -1;
+}
+
+h3::after {
+  content: ".";
+  position: absolute;
+}
+
+.progress {
+  height: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.progress-bar {
+  background-color: var(--main-h-color);
+  padding: 5px 10px;
+}
+
+.about-button .btn-dark {
+  background-color: var(--main-h-color);
+}
+
+.about-button .btn-dark:hover {
+  background-color: transparent;
+  color: var(--main-h-color);
+}
+
+.about-button .btn-outline-dark:hover {
+  background-color: var(--main-h-color);
+}
+
+/* Start Services */
+
+.main-heading h3 {
+  margin-bottom: 75px;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+}
+
+.main-heading h3::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  z-index: -1;
+}
+
+.services .item {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+.services .item span,
+.services .item span i {
+  transition: 0.5s all;
+}
+
+.services .item:hover span {
+  background-color: var(--main-h-color);
+}
+
+.services .item:hover i {
+  color: #fff;
+}
+
+.services .item p {
+  color: var(--main-p-color);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Start Portfolio / Works */
+#works .nav-pills .nav-link {
+  background-color: transparent;
+  color: var(--main-h-color);
+  font-weight: bold;
+  position: relative;
+  padding: 0 0 5px 0;
+  margin: 5px 10px;
+}
+
+.nav-pills .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--main-h-color);
+  transition: 0.3s all;
+}
+
+.nav-pills .nav-link.active::after {
+  width: 100%;
+}
+
+#works .item .layer {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  left: 5px;
+  bottom: 5px;
+  background-color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.5s all;
+}
+
+#works .item:hover .layer {
+  transform: translatey(0);
+  opacity: 1;
+}
+
+#works .item .product-content {
+  font-size: 13px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+#works .item .product-content p {
+  transition: 0.5s all;
+  padding-bottom: 20px;
+}
+
+#works .item:hover .product-content {
+  opacity: 1;
+}
+
+#works .item:hover .product-content p {
+  padding-bottom: 0;
+}
+
+#works .item .product-links span {
+  background-color: var(--main-h-color);
+  color: #fff;
+  border: 1px solid var(--main-h-color);
+}
+
+#works .item .product-links span:hover {
+  background-color: transparent;
+  color: var(--main-h-color);
+}
+
+/* Start Testimonials / clients */
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background-color: #999;
+  transition: 0.2s all;
+  border-radius: 50%;
+}
+
+.carousel-indicators [data-bs-target].active,
+.carousel-indicators [data-bs-target]:hover {
+  background-color: #555;
+}
+
+.carousel-item .img {
+  width: 100px;
+}
+
+.carousel-item p {
+  color: var(--main-p-color);
+  word-spacing: 2px;
+}
+
+.carousel-item h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888;
+}
+
+/* start Counter */
+.counter .item {
+  color: var(--main-h-color);
+}
+
+.counter .item span {
+  color: var(--main-p-color);
+  font-weight: 600;
+}
+/* Start Team */
+#team .card-body {
+  background-color: #5b5b5b;
+  color: #fff;
+}
+
+.card .img {
+  overflow: hidden;
+}
+
+.card .img img {
+  transition: 0.5s all;
+}
+.card .img:hover img {
+  transform: scale(1.2);
+}
+
+.card .img .layer {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  background-color: #fff;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+.card .layer span {
+  padding: 9px 14px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: var(--main-h-color);
+  color: #fff;
+  border: 1px solid var(--main-h-color);
+}
+
+.card .layer span:hover {
+  background-color: transparent;
+  color: var(--main-h-color);
+}
+
+.card:hover .layer {
+  opacity: 1;
+  transform: rotateY(360deg) scale(1, 1);
+}
+
+/* Start Contact */
+
+#contact .item i {
+  transition: 0.5s all;
+}
+
+#contact .item:hover i {
+  background-color: var(--main-h-color);
+  color: #fff;
+}
+
+#contact form input,
+#contact form textarea {
+  outline: none;
+  border: none;
+  background-color: #f4f4f4;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+  box-shadow: none;
+}
+
+#contact form textarea {
+  resize: both;
+  max-width: 100%;
+}
+
+#contact form .btn-dark {
+  font-size: 14px;
+}
+
+#contact form .btn-dark:hover {
+  background-color: transparent;
+  color: var(--main-h-color);
+}
+
+footer {
+  background-color: var(--main-h-color);
+}
+
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: var(--main-p-color);
+}
