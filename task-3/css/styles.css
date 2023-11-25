@@ -1,0 +1,22 @@
+/* bg
+#04091D */
+
+/* Start Header */
+header {
+  background-image: linear-gradient(#000000cc, rgba(0, 0, 0, 0.8)),
+    url(../images/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading button {
+  width: 150px;
+  font-size: 12px;
+  padding: 8px;
+}
+
+.form {
+  background-color: rgba(4, 8, 27, 0.4);
+  border: 1px solid #888;
+}
